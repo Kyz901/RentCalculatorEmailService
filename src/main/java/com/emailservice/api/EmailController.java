@@ -1,4 +1,4 @@
-package com.emailservice.core.api;
+package com.emailservice.api;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
