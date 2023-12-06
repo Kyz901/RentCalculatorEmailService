@@ -1,8 +1,10 @@
-package com.emailservice.core.model;
+package com.emailservice.model;
 
 import lombok.Data;
 import lombok.ToString;
 import lombok.experimental.Accessors;
+
+import java.util.List;
 
 @Data
 @Accessors(chain = true)
@@ -10,6 +12,7 @@ import lombok.experimental.Accessors;
 public class PricingEvent {
 
     private Long quoteId;
-    private Double price;
+    private List<PaymentPriceInfo> prices;
+    private PaymentMasterInfo paymentMaster;
 
 }
